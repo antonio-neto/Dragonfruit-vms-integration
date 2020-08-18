@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\OcularisDragonfruitPlugin\OcularisDragonfruitPlugin.csproj" />
+    <ProjectReference Include="..\OcularisDragonfruitPlugin\OcularisDragonfruitPlugin.Domain.csproj" />
   </ItemGroup>
 
 </Project>

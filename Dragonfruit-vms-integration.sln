@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DragonfruitPlugin.Client", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Plugins", "Plugins", "{BE6628CE-225E-4E21-8046-325857F4C93E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OcularisDragonfruitPlugin", "src\OcularisDragonfruitPlugin\OcularisDragonfruitPlugin.csproj", "{AD0C7E7A-71C6-4D5E-8EC4-94C97ED15077}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OcularisDragonfruitPlugin.Domain", "src\OcularisDragonfruitPlugin\OcularisDragonfruitPlugin.Domain.csproj", "{AD0C7E7A-71C6-4D5E-8EC4-94C97ED15077}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DragonfruitPlugin.Runner", "src\DragonfruitPlugin.Runner\DragonfruitPlugin.Runner.csproj", "{3B83D69D-DBDE-4791-BC28-3F6105DBFDD4}"
 EndProject

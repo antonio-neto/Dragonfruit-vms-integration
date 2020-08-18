@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace OcularisDragonfruitPlugin
+namespace OcularisDragonfruitPlugin.Domain
 {
     public class OcularisPluginClientPlatform : IPluginClientPlatform
     {

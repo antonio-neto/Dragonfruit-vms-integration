@@ -1,12 +1,15 @@
-﻿using System;
-
-namespace DragonfruitPlugin.Runner
+﻿namespace DragonfruitPlugin.Runner
 {
     class Program
     {
-        static void Main(string[] args)
+        static async System.Threading.Tasks.Task Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var plugin = new OcularisDragonfruitPlugin.Domain.OcularisPluginClientPlatform();
+            await plugin.GetAuth(args[0], args[1], new string[] {
+                    args[2]
+                });
+
+            await plugin.GetChannelGroupAndChannelData(args[3]);
         }
     }
 }

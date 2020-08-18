@@ -238,5 +238,11 @@
     <Content Include="ExternalLibs\SharpCompress.dll" />
     <Content Include="ExternalLibs\System.Windows.Controls.DataVisualization.Toolkit.dll" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OcularisDragonfruitPlugin\OcularisDragonfruitPlugin.Domain.csproj">
+      <Project>{ad0c7e7a-71c6-4d5e-8ec4-94c97ed15077}</Project>
+      <Name>OcularisDragonfruitPlugin.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
