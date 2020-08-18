@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DragonfruitPlugin.Client\DragonfruitPlugin.Client.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="AxHeimdallLib">
+      <HintPath>Libs\AxHeimdallLib.dll</HintPath>
+    </Reference>
+    <Reference Include="OCAdapter">
+      <HintPath>Libs\OCAdapter.dll</HintPath>
+    </Reference>
+    <Reference Include="OcularisInterface">
+      <HintPath>Libs\OcularisInterface.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

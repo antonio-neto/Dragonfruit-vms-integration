@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{08BF3A88-C83F-467D-A691-08294825EF44}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>OcularisDragonfruitPlugin.WinFormNet</RootNamespace>
+    <AssemblyName>OcularisDragonfruitPlugin.WinFormNet</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Auditor, Version=4.0.0.51, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ExternalLibs\Auditor.dll</HintPath>
+    </Reference>
+    <Reference Include="AxHeimdallLib, Version=3.9.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ExternalLibs\AxHeimdallLib.dll</HintPath>
+    </Reference>
+    <Reference Include="CayugaAdapter">
+      <HintPath>ExternalLibs\CayugaAdapter.dll</HintPath>
+    </Reference>
+    <Reference Include="CayugaLayoutParser, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ExternalLibs\CayugaLayoutParser.dll</HintPath>
+    </Reference>
+    <Reference Include="DirectShowLib-2005">
+      <HintPath>ExternalLibs\DirectShowLib-2005.dll</HintPath>
+    </Reference>
+    <Reference Include="HeimdallLib, Version=3.8.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>ExternalLibs\HeimdallLib.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>ExternalLibs\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="InfoDispatcher, Version=3.8.1.55, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ExternalLibs\InfoDispatcher.dll</HintPath>
+    </Reference>
+    <Reference Include="MessageTypes, Version=3.8.1.55, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ExternalLibs\MessageTypes.dll</HintPath>
+    </Reference>
+    <Reference Include="NetDVMSAdapter, Version=3.8.1.55, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ExternalLibs\NetDVMSAdapter.dll</HintPath>
+    </Reference>
+    <Reference Include="NetDVMSLayoutParser, Version=3.8.1.55, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ExternalLibs\NetDVMSLayoutParser.dll</HintPath>
+    </Reference>
+    <Reference Include="NetEVSAdapter, Version=3.8.1.55, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ExternalLibs\NetEVSAdapter.dll</HintPath>
+    </Reference>
+    <Reference Include="NVRAdapterRepository, Version=3.8.1.55, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ExternalLibs\NVRAdapterRepository.dll</HintPath>
+    </Reference>
+    <Reference Include="OCAdapter, Version=3.8.1.55, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ExternalLibs\OCAdapter.dll</HintPath>
+    </Reference>
+    <Reference Include="OCInfoDispatcher, Version=3.8.1.55, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ExternalLibs\OCInfoDispatcher.dll</HintPath>
+    </Reference>
+    <Reference Include="OcularisInterface, Version=3.8.1.55, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ExternalLibs\OcularisInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="OcularisLayoutServer, Version=3.8.1.55, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ExternalLibs\OcularisLayoutServer.dll</HintPath>
+    </Reference>
+    <Reference Include="OcularisNet, Version=3.8.1.55, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ExternalLibs\OcularisNet.dll</HintPath>
+    </Reference>
+    <Reference Include="OcularisSharedTools, Version=3.8.1.55, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ExternalLibs\OcularisSharedTools.dll</HintPath>
+    </Reference>
+    <Reference Include="OnssiLogger, Version=3.8.1.55, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ExternalLibs\OnssiLogger.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp">
+      <HintPath>ExternalLibs\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="RTP.NET">
+      <HintPath>ExternalLibs\RTP.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="SeeTec.Base">
+      <HintPath>ExternalLibs\SeeTec.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="SeeTec.BusinessLogic">
+      <HintPath>ExternalLibs\SeeTec.BusinessLogic.dll</HintPath>
+    </Reference>
+    <Reference Include="SeeTec.ConfigurationUI">
+      <HintPath>ExternalLibs\SeeTec.ConfigurationUI.dll</HintPath>
+    </Reference>
+    <Reference Include="SeeTec.Controls">
+      <HintPath>ExternalLibs\SeeTec.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="SeeTec.D3DImageWrapper">
+      <HintPath>ExternalLibs\SeeTec.D3DImageWrapper.dll</HintPath>
+    </Reference>
+    <Reference Include="SeeTec.D3DImageWrapper45">
+      <HintPath>ExternalLibs\SeeTec.D3DImageWrapper45.dll</HintPath>
+    </Reference>
+    <Reference Include="SeeTec.DataAccess">
+      <HintPath>ExternalLibs\SeeTec.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="SeeTec.ImageResources">
+      <HintPath>ExternalLibs\SeeTec.ImageResources.dll</HintPath>
+    </Reference>
+    <Reference Include="SeeTec.Media">
+      <HintPath>ExternalLibs\SeeTec.Media.dll</HintPath>
+    </Reference>
+    <Reference Include="SeeTec.TextResources">
+      <HintPath>ExternalLibs\SeeTec.TextResources.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpCompress">
+      <HintPath>ExternalLibs\SharpCompress.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Controls.DataVisualization.Toolkit">
+      <HintPath>ExternalLibs\System.Windows.Controls.DataVisualization.Toolkit.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ExternalLibs\Auditor.dll" />
+    <Content Include="ExternalLibs\AxHeimdallLib.dll" />
+    <Content Include="ExternalLibs\CayugaAdapter.dll" />
+    <Content Include="ExternalLibs\CayugaLayoutParser.dll" />
+    <Content Include="ExternalLibs\DirectShowLib-2005.dll" />
+    <Content Include="ExternalLibs\HeimdallLib.dll" />
+    <Content Include="ExternalLibs\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="ExternalLibs\InfoDispatcher.dll" />
+    <Content Include="ExternalLibs\MessageTypes.dll" />
+    <Content Include="ExternalLibs\NetDVMSAdapter.dll" />
+    <Content Include="ExternalLibs\NetDVMSLayoutParser.dll" />
+    <Content Include="ExternalLibs\NetEVSAdapter.dll" />
+    <Content Include="ExternalLibs\NVRAdapterRepository.dll" />
+    <Content Include="ExternalLibs\OCAdapter.dll" />
+    <Content Include="ExternalLibs\OCInfoDispatcher.dll" />
+    <Content Include="ExternalLibs\OcularisInterface.dll" />
+    <Content Include="ExternalLibs\OcularisLayoutServer.dll" />
+    <Content Include="ExternalLibs\OcularisNet.dll" />
+    <Content Include="ExternalLibs\OcularisSharedTools.dll" />
+    <Content Include="ExternalLibs\OnssiLogger.dll" />
+    <Content Include="ExternalLibs\RestSharp.dll" />
+    <Content Include="ExternalLibs\RTP.NET.dll" />
+    <Content Include="ExternalLibs\SeeTec.Base.dll" />
+    <Content Include="ExternalLibs\SeeTec.BusinessLogic.dll" />
+    <Content Include="ExternalLibs\SeeTec.ConfigurationUI.dll" />
+    <Content Include="ExternalLibs\SeeTec.Controls.dll" />
+    <Content Include="ExternalLibs\SeeTec.D3DImageWrapper.dll" />
+    <Content Include="ExternalLibs\SeeTec.D3DImageWrapper45.dll" />
+    <Content Include="ExternalLibs\SeeTec.DataAccess.dll" />
+    <Content Include="ExternalLibs\SeeTec.ImageResources.dll" />
+    <Content Include="ExternalLibs\SeeTec.Media.dll" />
+    <Content Include="ExternalLibs\SeeTec.TextResources.dll" />
+    <Content Include="ExternalLibs\SharpCompress.dll" />
+    <Content Include="ExternalLibs\System.Windows.Controls.DataVisualization.Toolkit.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
