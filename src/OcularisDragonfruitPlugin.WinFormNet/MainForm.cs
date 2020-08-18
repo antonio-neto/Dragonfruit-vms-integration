@@ -140,7 +140,18 @@ namespace OcularisDragonfruitPlugin.WinFormNet
 
 			axAuga.SetViewportSource(0, _camera.GetLiveUrl());
 
-			short sStartYear, sStartMonth, sStartDay, sStartHour, sStartMinute, sStartSecond, sStartMillisecond;
+            axAuga.PlayBrowse(0, 0, 1 * 1000);
+            foreach (ISpeaker speaker in _camera.Speakers())
+            {
+                axAuga.SetCameraIDispatch(speaker.GetID(), speaker);
+            }
+
+            foreach (IMicrophone microphone in _camera.Mics())
+            {
+                axAuga.SetCameraIDispatch(microphone.GetID(), microphone);
+            }
+
+            short sStartYear, sStartMonth, sStartDay, sStartHour, sStartMinute, sStartSecond, sStartMillisecond;
 			short sStopYear, sStopMonth, sStopDay, sStopHour, sStopMinute, sStopSecond, sStopMillisecond;
 
 			DateTime dtEnd = DateTime.Now;
@@ -239,7 +250,16 @@ namespace OcularisDragonfruitPlugin.WinFormNet
             }
 
             axAuga.PlayBrowse(0, 0, 1 * 1000);
-		}
+            foreach (ISpeaker speaker in _camera.Speakers())
+            {
+                axAuga.SetCameraIDispatch(speaker.GetID(), speaker);
+            }
+
+            foreach (IMicrophone microphone in _camera.Mics())
+            {
+                axAuga.SetCameraIDispatch(microphone.GetID(), microphone);
+            }
+        }
 
 		private void btnVideoGraphic_Click(object sender, EventArgs e)
         {
